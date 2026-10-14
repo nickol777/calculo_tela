@@ -1,0 +1,173 @@
+body, .empaque-container, .toalla-container, .poncho-container, .turbante-container {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.empaque-container,
+.toalla-container,
+.poncho-container,
+.turbante-container {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.volver-btn {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.volver-btn:hover {
+  background-color: #c62828;
+}
+
+.marca {
+  font-weight: bold;
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.formulario-empaque,
+.formulario-toalla,
+.formulario-poncho,
+.formulario-turbante {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-empaque h2,
+.formulario-toalla h2,
+.formulario-poncho h2,
+.formulario-turbante h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #0d47a1;
+}
+
+.formulario-empaque label,
+.formulario-toalla label,
+.formulario-poncho label,
+.formulario-turbante label {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.formulario-empaque select,
+.formulario-toalla select,
+.formulario-poncho select,
+.formulario-empaque input,
+.formulario-toalla input,
+.formulario-poncho input,
+.formulario-turbante input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.formulario-empaque button,
+.formulario-toalla button,
+.formulario-poncho button,
+.formulario-turbante button {
+  margin-top: 1.2rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #039be5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.formulario-empaque button:hover,
+.formulario-toalla button:hover,
+.formulario-poncho button:hover,
+.formulario-turbante button:hover {
+  background-color: #0288d1;
+}
+
+/* RESULTADO MINIMALISTA */
+.resultado {
+  background-color: #ffffffd9;
+  backdrop-filter: blur(4px);
+  padding: 2rem;
+  border-radius: 16px;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+  color: #1a237e;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.resultado h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0d47a1;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.resultado p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ALERTA MINIMALISTA */
+.alert-box {
+  background-color: #fff3e0;
+  border-left: 4px solid #ff9800;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-top: 1.5rem;
+  color: #e65100;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.2);
+  border: 1px solid #ffe0b2;
+}
+
+.alert-box::before {
+  content: "⚠️";
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}

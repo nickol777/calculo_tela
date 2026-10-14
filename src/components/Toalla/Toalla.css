@@ -1,0 +1,141 @@
+body, .toalla-container {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.toalla-container {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.volver-btn {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.volver-btn:hover {
+  background-color: #c62828;
+}
+
+.marca {
+  font-weight: bold;
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.formulario-toalla {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-toalla h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #0d47a1;
+}
+
+.formulario-toalla label {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.formulario-toalla select,
+.formulario-toalla input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.formulario-toalla button {
+  margin-top: 1.2rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #039be5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.formulario-toalla button:hover {
+  background-color: #0288d1;
+}
+
+.resultado {
+  background-color: #f3e5f5;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+  color: #0d47a1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.resultado h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.resultado p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.alert-box {
+  background-color: #e3f2fd;
+  border-left: 6px solid #2196f3;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-top: 1.5rem;
+  color: #0d47a1;
+  box-shadow: 0 4px 8px rgba(33, 150, 243, 0.2);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  border: 1px solid #2196f3;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.alert-box::before {
+  content: "\26A0"; /* Unicode for ⚠ */
+  font-size: 1.3rem;
+  color: #f44336;
+  margin-right: 0.5rem;
+}
